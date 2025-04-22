@@ -2,15 +2,15 @@ name: Six Workflow
 on:
   push:
     branches:
-      -master
-      -"page/*"
-      -"page/**"
-      -"!page/blog"
-    tags:
-      -"v1.*"
-      -"!v1.2.1"
+      - master
+      - "page/*"
+      - "page/**"
+      - "!page/blog"
+    #tags:
+     # -"v1.*"
+     #-"!v1.2.1"
     paths:
-      -"**.html"
+      - "**.html"
 
 
 jobs:
