@@ -9,7 +9,7 @@ on:
     tags:
       -"v1.*"
       -"!v1.2.1"
-    patchs:
+    paths:
       -"**.html"
 
 
