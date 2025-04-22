@@ -3,8 +3,8 @@ on:
   push:
     branches:
       -master
-      -"page/*"  #page/about   page/blog
-      -"page/**" #page/blog/sport 
+      -"page/*"
+      -"page/**"
       -"!page/blog"
     tags:
       -"v1.*"
