@@ -1,0 +1,23 @@
+name: Fifth Workflow
+on:
+  push:
+    branches:
+      -master
+      -"page/*"  #page/about   page/blog
+      -"page/**" #page/blog/sport 
+      -"!page/blog"
+    tags:
+      -"v1.*"
+      -"!v1.2.1"
+    patchs:
+      -"**.html"
+
+
+jobs:
+  run-first-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Event Vars
+        run: |
+          echo $GITHUB_SHA
+          echo $GITHUB_REF
