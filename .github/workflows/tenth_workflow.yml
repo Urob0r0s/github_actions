@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Contexts and Expressions
         run: |
-          echo ${{ toJson(github) }}"
-          echo ${{ toJson(runner) }}"
-          echo ${{ toJson(job) }}"
-          echo ${{ toJson(steps) }}"
+          echo "${{ toJson(github) }}"
+          echo "${{ toJson(runner) }}"
+          echo "${{ toJson(job) }}"
+          echo "${{ toJson(steps) }}"
